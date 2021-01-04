@@ -1,0 +1,22 @@
+TID_TITLE
+Fractal
+TID_TITLE_DEFAULT
+?TID_TITLE?
+TID_META_KEYWORDS_DEFAULT
+fractal art mandelbrot imaginary numbers 
+TID_META_DESCRIPTION_DEFAULT
+The beauty of fractals. When I implemented this for the first time in the early 90s it took my 386 hours to render a mandelbrot :D
+TID_NAVIGATION_MANDELBROT
+Mandelbrot
+TID_NAVIGATION_TREE
+Tree
+TID_NAVIGATION_ABOUT
+About this website
+TID_NAVIGATION_DATAPROTECTION
+Data Protection
+TID_NAVIGATION_CONTACT
+Contact
+TID_NAVIGATION_VALIDATOR
+Validate
+TID_COPYRIGHT
+Copyright &copy; {COPYRIGHT_PERIOD} by Sascha Wildgrube

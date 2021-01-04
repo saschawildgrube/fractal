@@ -1,0 +1,21 @@
+Fractal Assembly
+
+by Sascha Wildgrube (sascha@wildgrube.com)
+
+PURPOSE
+
+	This assembly contains methods to produce fractal graphics.
+
+FEATURES
+
+	* Module fractal/morphingfractaltree
+		This module draws a morphing fractal binary tree that changes each time
+		it is reloading.
+		
+
+VERSION HISTORY
+
+
+	Revision 1 TODO
+		Baselined TODO
+		First baselined version

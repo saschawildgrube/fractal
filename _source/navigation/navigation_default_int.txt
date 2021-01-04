@@ -1,0 +1,3 @@
+LEVEL	;CONTEXT			;LABEL												;CONDITIONS
+0			;mandelbrot		;?TID_NAVIGATION_MANDELBROT?	;
+0			;tree					;?TID_NAVIGATION_TREE?				; 

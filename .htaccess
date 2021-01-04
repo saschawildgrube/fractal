@@ -1,0 +1,19 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteRule ([.]*)sitemap\.xml$ /fractal/?command=sitemap&%{QUERY_STRING}
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ([A-Za-z0-9\.\/\-\ \+]+)/?$ /fractal/?seourl=$1&%{QUERY_STRING} [L]
+ErrorDocument 400 /fractal/?error=HTTP400
+ErrorDocument 401 /fractal/?error=HTTP401
+ErrorDocument 403 /fractal/?error=HTTP403
+ErrorDocument 404 /fractal/?error=HTTP404
+ErrorDocument 413 /fractal/?error=HTTP413
+ErrorDocument 500 /fractal/?error=HTTP500 
+AddHandler forbidden-file-types .inc
+AddHandler forbidden-file-types .cfg
+AddHandler forbidden-file-types .csv
+Action forbidden-file-types /fractal/?error=HTTP404&query=
+<IfModule mod_headers.c>
+   RequestHeader unset Proxy
+</IfModule>
