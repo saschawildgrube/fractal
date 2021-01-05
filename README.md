@@ -9,7 +9,6 @@ The root folder of the repo is the document root of the website.
 3. Check out /_source/env.inc and adjust the following functions to match the directory structure on your webserver:
 - GetDocumentRootDir()
 - GetRootURL()
-- GetTempDir() 
 
 This website is based on SteepPHP: https://www.steelphp.com.
 
