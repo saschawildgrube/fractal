@@ -10,7 +10,7 @@ The root folder of the repo is the document root of the website.
 - GetDocumentRootDir()
 - GetRootURL()
 
-This website is based on SteepPHP: https://www.steelphp.com.
+This website is based on SteelPHP: https://www.steelphp.com.
 
 Enjoy!
 
