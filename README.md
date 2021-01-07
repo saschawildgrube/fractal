@@ -14,7 +14,7 @@ This website is based on SteelPHP: https://www.steelphp.com.
 
 Enjoy!
 
-## Licence
+## License
 Copyright 2020-2021 by Sascha Wildgrube
 
 Licensed under the Apache License, Version 2.0 (the "License");
