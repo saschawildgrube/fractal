@@ -9,7 +9,7 @@ complex web applications.
 It addresses numerous issues web application developers have
 to take care of. It contains solutions to create multi-lingual
 dynamic websites and database wrapping webservices.
-=Copyright and Licence=
+=Copyright and License= 
 Copyright 2005-2020 by Sascha Wildgrube
 
 

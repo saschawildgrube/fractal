@@ -8,14 +8,6 @@ PURPOSE
 
 FEATURES
 
-	* Module fractal/morphingfractaltree
-		This module draws a morphing fractal binary tree that changes each time
-		it is reloading.
-		
-
-VERSION HISTORY
-
-
-	Revision 1 TODO
-		Baselined TODO
-		First baselined version
+	* Module fractal/fractal
+		This module draws a mandelbrot or a morphing fractal binary tree that
+		changes each time it is reloading.

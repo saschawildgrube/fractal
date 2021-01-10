@@ -1,5 +1,5 @@
 ={WDK} Release Notes=
-==Version 0.0.0.78 WORK IN PROGRESS==
+==Version 0.0.0.78 WORK IN PROGRESS== 
 NOT YET Baselined
 * '''IMPORTANT'''
 ** Renamed function CallbackInit() to OnInit() in CWebsite, CModule, CUnitTest and CWebservice and derived classes. THIS IS A MASSIVE CHANGE!
@@ -9,7 +9,7 @@ NOT YET Baselined
 * Defects
 ** No changes
 * New features
-** Introduced the CPlugin class.
+** Introduced the CWebsitePlugin class.
 ** Added function CWebsite::IncludePlugin() to load the plugin source code file from the assembly line.
 ** Added function CWebsite::GetPlugin() to access a plugin class based on its ID.
 ** Added function CWebsiteSatellite::GetSatelliteType() which must be implemented by all derived classes to prefix all trace messages emitted by the website satellite class.
@@ -23,7 +23,7 @@ NOT YET Baselined
 ** Removed function CAssembly::CallbackRenderGenericOutputItem(). Use plugin classes to embedd generic output items.
 ** Removed elements CGoogleMapsElement, CFacebookShareElement, CLinkedInShareElement and CXingShareElement.
 * Quality
-** No changes
+** Added more typos to the sourcefiles/typo test.
 * Refactoring
 ** Renamed function CWebsite::CallbackInit() to OnInit().
 ** Renamed function CWebsite::CallbackCreateImage() to OnCreateImage().
@@ -378,7 +378,7 @@ Baselined 2017-12-28
 Baselined 2017-03-28
 
 
-Starting from this release WDK is licensed under the Apache Licence 2.0
+Starting from this release WDK is licensed under the Apache License 2.0
 * Security
 ** No changes
 * Defects

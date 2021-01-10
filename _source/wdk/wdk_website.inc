@@ -14,7 +14,7 @@
 	require_once('wdk_routing.inc');
 	require_once('wdk_websitesatellite.inc');
 	require_once('wdk_assemblyline.inc');
-	require_once('wdk_plugin.inc');
+	require_once('wdk_plugin_website.inc');
 	require_once('wdk_element.inc');
 	require_once('wdk_module.inc');
 	require_once('wdk_content.inc'); 
@@ -552,9 +552,9 @@
 			}
 			foreach ($this->m_arrayPlugins as $plugin)
 			{
-				if (get_parent_class($plugin) != 'CPlugin')
+				if (get_parent_class($plugin) != 'CWebsitePlugin')
 				{
-					FataError('All plugins must be derived from CPlugin!');	
+					FatalError('All plugins must be derived from CWebsitePlugin!');	
 				}
 			}
 	

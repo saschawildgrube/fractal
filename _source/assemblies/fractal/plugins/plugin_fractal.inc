@@ -3,7 +3,7 @@
 	require_once(GetAssemblyDir('fractal').'fractaltree.inc');
 	require_once(GetAssemblyDir('fractal').'mandelbrot.inc');
 
-	class CFractalPlugin extends CPlugin
+	class CFractalPlugin extends CWebsitePlugin
 	{
 		function __construct(
 			$website)

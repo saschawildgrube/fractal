@@ -15,8 +15,14 @@
 			$strExtention = GetExtentionFromPath($strFilePath);
 			$strFileName = GetFilenameFromPath($strFilePath);
 			
-			// we don't want to fail the test because of THIS file!
+			// We don't want to fail the test because of THIS file!
 			if ($strFileName == 'test_typo.php')
+			{
+				return;	
+			}
+			
+			// We don't check minified 3rd party js files
+			if (FindString($strFileName,'.min.js') != -1)
 			{
 				return;	
 			}
@@ -25,13 +31,18 @@
 				||  $strExtention == 'php'
 				||  $strExtention == 'js'  
 				||  $strExtention == 'txt'
+				||  $strExtention == 'md'
 				||  $strExtention == 'htm')
 			{
 				$arrayRegExp = array();
-				$arrayRegExp[] = '/retrun/';
-				$arrayRegExp[] = '/provacy/';
-				$arrayRegExp[] = '/ teh /';
-				$arrayRegExp[] = '/plgin/';
+				$arrayRegExp[] = '/retrun/i';
+				$arrayRegExp[] = '/provacy/i';
+				$arrayRegExp[] = '/ teh /i';
+				$arrayRegExp[] = '/plgin/i';
+				$arrayRegExp[] = '/steepphp/i';
+				$arrayRegExp[] = '/scallfolder/i';
+				$arrayRegExp[] = '/licence/i';
+				
 				$this->CheckFileAgainstRegExp($strFilePath,$arrayRegExp);
 			}
 			
