@@ -52,12 +52,12 @@
 					
 		}
 		
-		function CallbackInitAssemblyLine(&$assemblyLine)
+		function OnInitAssemblyLine(&$assemblyLine)
 		{
 			$assembly = new CAssembly($this,'fractal');
 			$assemblyLine->AddAssembly($assembly);
 	
-			parent::CallbackInitAssemblyLine($assemblyLine);
+			parent::OnInitAssemblyLine($assemblyLine);
 		}
 
 		function OnInitPlugins()
@@ -71,9 +71,9 @@
 			return $arrayPlugins;	
 		}
 		
-		function CallbackInitRoutingMap()
+		function OnInitRoutingMap()
 		{
-			parent::CallbackInitRoutingMap();
+			parent::OnInitRoutingMap();
 			$this->LoadRoutingMap('default');
 		}
 		
@@ -118,7 +118,7 @@
 			return 'sascha@wildgrube.com';
 		}
 
-		function CallbackRenderNavigation($strOutput)
+		function OnRenderNavigation($strOutput)
 		{
 			
 			$navigationtree = new CNavigationTree();
@@ -147,12 +147,12 @@
 		}
 
 
-		function CallbackGetDateLocalFormat($strCountryID)
+		function OnGetDateLocalFormat($strCountryID)
 		{
 				return '%Y-%m-%d';
 		}
 
-		function CallbackGetTimeLocalFormat($strCountryID)
+		function OnGetTimeLocalFormat($strCountryID)
 		{
 				return '%H:%M:%S';
 		}
