@@ -65,8 +65,7 @@
 			$arrayPlugins = array();
 		
 			$this->IncludePlugin('fractal');
-			$plugin = new CFractalPlugin($this);
-			$arrayPlugins[] = $plugin;
+			$arrayPlugins[] = new CFractalPlugin($this);;
 
 			return $arrayPlugins;	
 		}
